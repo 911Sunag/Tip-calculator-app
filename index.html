@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .attribution a {
+      color: hsl(183, 100%, 15%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>SPLI <br> TTER</h1>
+  </header>
+  <main>
+    <section class="left">
+
+      <div class="bill-total">
+        <h4>Bill</h4>
+        <div class="random">
+          <img src="images/icon-dollar.svg" alt="dollar">
+          <span id="cost"></span>
+        </div>
+        <!-- Random bill generated -->
+      </div>
+
+      <div class="select-tip">
+        <h4>Select Tip %</h4>
+        <div class="custom-btn">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input type="text" placeholder="CUSTOM" autocomplete="off" id="custom-tip">
+        </div>
+      </div>
+
+      <div class="people">
+        <div class="heading">
+          <h4>Number of People</h4>
+          <small id="error-msg"></small>
+          <!-- Can't be Zero -->
+        </div>
+        <div class="number">
+          <img src="images/icon-person.svg" alt="person icon">
+          <input type="text" placeholder="0" id="noof" maxlength="4" autocomplete="off">
+        </div>
+      </div>
+    </section>
+    <section class="right">
+
+      <div class="tip">
+        <div class="ammount">
+          <p>Tip Amount <br> <small>/ person</small></p>
+          <span>$00.00</span>
+        </div>
+
+        <div class="totala">
+          <p>Total <br><small>/ person</small></p>
+          <span id="total">$00.00</span>
+        </div>
+      </div>
+      <button>Reset</button>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+      Coded by <a href="#">Sunag Arigala</a>.
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+
+</html>
